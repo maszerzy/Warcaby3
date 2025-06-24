@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 10px;
+}
+h1 {
+  margin: 10px 0;
+}
+#info {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  grid-template-rows: repeat(8, 40px);
+  margin: 0 auto;
+  border: 2px solid black;
+}
+.square {
+  width: 40px;
+  height: 40px;
+}
+.light { background-color: #eee; }
+.dark { background-color: #444; }
+.piece {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 4px auto;
+}
+.red { background: red; }
+.black { background: black; }
+.king { border: 2px solid gold; }
+.selected { outline: 2px dashed yellow; }
